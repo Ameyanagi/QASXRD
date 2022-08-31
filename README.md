@@ -6,7 +6,7 @@ Please refer to [QASXRD.ipynb](./QASXRD.ipynb) for an example.
 
 ## How to use in Bluesky
 
-1. Login to nslsii
+1. Login to [Bluesky](https://jupyter.nsls2.bnl.gov/)
 2. Open terminal and clone the repo.
 ```
 git clone https://github.com/Ameyanagi/QASXRD
