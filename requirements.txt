@@ -1,0 +1,4 @@
+fabio
+pyfai
+opencv-python
+watchdog
