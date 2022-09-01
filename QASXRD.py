@@ -172,9 +172,15 @@ class QASXRD(object):
 
         fig, ax = plt.subplots(1, 2, figsize=(10,5))
         ax[0].imshow(im_cv[:,:,-1], cmap='gray', vmin=self.plot_min, vmax=self.plot_max)
+        ax[0].set_xlabel("X")
+        ax[0].set_ylabel("Y")
+        
         ax[1].plot(tth, I)
-        plt.savefig(output_fig)
+        ax[1].set_xlabel("$2{\\theta} (^{\circ}$)")
+        ax[1].set_ylabel("Intensity (a.u.)")
+        plt.tight_layout()
         plt.show()
+        plt.savefig(output_fig)
     
     def plot_widget(self):
         im = fabio.open(self.tiff_list[-1])
@@ -191,7 +197,13 @@ class QASXRD(object):
             
             fig, ax = plt.subplots(1, 2, figsize=(10,5))
             ax[0].imshow(im_cv[:,:,-1], cmap='gray', vmin=plot_min, vmax=plot_max)
+            ax[0].set_xlabel("X")
+            ax[0].set_ylabel("Y")
+            
             ax[1].plot(tth, I)
+            ax[1].set_xlabel("$2{\\theta} (^{\circ}$)")
+            ax[1].set_ylabel("Intensity (a.u.)")
+            plt.tight_layout()
             plt.show()
 
 def main():
