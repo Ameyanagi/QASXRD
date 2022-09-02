@@ -2,3 +2,4 @@ fabio
 pyfai
 opencv-python
 watchdog
+pyopencl
